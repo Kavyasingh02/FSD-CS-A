@@ -12,7 +12,6 @@
 // console.log(b);
 // console.log(c);
 
-
 function hello(user="Guest"){
     console.log(`hello ${user}`);   
 }
@@ -30,16 +29,15 @@ console.log("sum"+value);
 const add=(a=5,b=12)=>a+b;
 console.log(add());
 
-
+//IIFE
 (function(){
  console.log('Inside IIFE');
 })();
-
 function f1(user,callback){
    console.log(`Hello ${user}`);
    callback();
 }
-
 f1("admin",()=>{
     console.log(add(3,5))
 });
+
