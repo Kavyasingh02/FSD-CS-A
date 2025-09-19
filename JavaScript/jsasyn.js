@@ -63,6 +63,7 @@ function displayData(){
 //           .then(displayData)
 //           .catch((err)=>{
 //             console.log("Error "+err);
+
 //           })
 //           .finally(()=>{
 //             console.log("outside promise")
