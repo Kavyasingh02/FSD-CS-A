@@ -5,26 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-     #main{
+     /* #main{
         height: 300px;
         width: 300px;
         background-color: pink;
         border: 5px solid black;
-     }
+     } */
 
     </style>
 </head>
-<body>
-    <div id="main">
+<body  id="color">
+     <!-- <div id="main">
         <button onclick="abes()">click</button>
         <p id="aaa"></p>
-    </div>
+    </div> -->
+    
+    <!-- <script>
+        // function abes(){
+        //     document.getElementById("aaa").innerHTML="<h1>Hello!!</h1>";
+        // }
+    </script> -->
+
+    <button onclick="red()">red</button>
+    <button onclick="blue()">blue</button>
+    <button onclick="green()">green</button>
 
     <script>
-        function abes(){
-            document.getElementById("aaa").innerHTML="<h1>Hello!!</h1>";
+        function red(){
+            document.getElementById("color").style.backgroundColor="red";
         }
-
+        function blue(){
+            document.getElementById("color").style.backgroundColor="blue";
+        }
+        function green(){
+            document.getElementById("color").style.backgroundColor="green";
+        }
     </script>
+
+    
 </body>
 </html>

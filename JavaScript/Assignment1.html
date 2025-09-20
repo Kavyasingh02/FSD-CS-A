@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .counter_App{
+          border: 1px solid black;
+          background-color: beige;
+          height: 400px;
+          width: 400px;
+          border-radius: 10px; 
+        }
+        img{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+        .header{
+            display: flex;
+            align-items: center; 
+            background-color: burlywood; 
+            gap: 100px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        h1{
+            padding-top: 50px;
+            text-align: center;
+        }
+        
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            background: #a19baf;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .buttons{
+           display: flex;               
+      align-items: center;     
+      gap: 20px;                   
+      padding-left: 140px;    
+        } 
+    </style>
+</head>
+<body>
+    <div class="counter_App">
+        <div class="header">
+        <img src="Counter.png" alt="">
+        <h2>Counter App</h2>
+        </div>
+         <h1 id="count">0</h1>
+         <div class="buttons">
+        <button id="inc" onclick="increase()">+</button>
+        <button id="dec" onclick="decrease()">-</button>
+         </div>
+    </div>
+
+    <script>
+      let count=0;
+      function increase(){
+       if(count<10){
+            count++;
+            document.getElementById('count').textContent=count;
+        
+        if(count==5){
+            document.getElementById("count").style.color="red";
+        } 
+        else{
+            document.getElementById("count").style.color="black";
+        } 
+          
+    }
+    else{
+            document.getElementById("count").textContent="vale exceeded 10!";
+        }    
+
+      }
+
+       function decrease(){
+        if(count>0){
+            count--;
+            document.getElementById("count").textContent=count;
+        if(count==5){
+            document.getElementById("count").style.color="red";
+        } 
+        else{
+            document.getElementById("count").style.color="black";
+        } 
+    }
+        else{
+            document.getElementById("count").textContent="value cannot be below 0";}
+
+      }
+
+
+    </script>
+</body>
+</html>
