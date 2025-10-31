@@ -1,0 +1,19 @@
+.card{
+    width: 400px;
+    height: 400px;
+    background-color: blueviolet;
+    color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    margin: auto;
+    font-size: 25px; 
+    margin-top: 5px; 
+}
+.cart{
+    width: 74px;
+    height: 30px;
+    border: 1px solid grey;
+    border-radius: 8px;
+}
